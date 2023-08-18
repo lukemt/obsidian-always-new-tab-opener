@@ -205,7 +205,7 @@ export default class Opener extends Plugin {
           }
 
           // same file
-          if (file.path == app.workspace.getActiveFile()?.path) {
+          if (file.path == parentThis.app.workspace.getActiveFile()?.path) {
             // clicking on link with same path as active file in view (ie headings, blocks, etc). file.path is thing being opened. app.workspace.getActiveFile()?.path is currently opened tab filepath.
             return defaultBehavior();
           }
@@ -227,7 +227,7 @@ export default class Opener extends Plugin {
             if (!parentThis.settings.extOnlyWhenMetaKey || parentThis.isMetaKeyHeld) {
               new Notice('Opening external file with default app (Opener Plugin)');
               // @ts-ignore-next-line
-              app.openWithDefaultApp(file.path);
+              parentThis.app.openWithDefaultApp(file.path);
               return;
             } else {
               new Notice('Opener Tip: Hold Cmd/Ctrl key to open with default app');
@@ -252,15 +252,15 @@ export default class Opener extends Plugin {
               matchingLeaves.push(leaf);
             }
           }
-          app.workspace.iterateRootLeaves(pushLeaveIfMatching);
+          parentThis.app.workspace.iterateRootLeaves(pushLeaveIfMatching);
           // check floating windows
-          app.workspace.getLayout()?.floating?.children?.forEach((win: any) => {
+          parentThis.app.workspace.getLayout()?.floating?.children?.forEach((win: any) => {
             if (win?.type !== "window") return console.log("Opener-Plugin: Strange floating object found (no window)", win)
             win.children?.forEach((tabs: any) => {
               if (tabs?.type !== "tabs") return console.log("Opener-Plugin: Strange floating object found (no tabs)", tabs)
               tabs.children?.forEach((leaf: any) => {
                 if (leaf?.type !== "leaf") return console.log("Opener-Plugin: Strange floating object found (no leaf)", leaf)
-                pushLeaveIfMatching(app.workspace.getLeafById(leaf.id))
+                pushLeaveIfMatching(parentThis.app.workspace.getLeafById(leaf.id))
               })
             })
           })
@@ -281,7 +281,7 @@ export default class Opener extends Plugin {
           }
 
           // culmination spear
-          return oldOpenFile.apply(this.app.workspace.getLeaf('tab'), [
+          return oldOpenFile.apply(parentThis.app.workspace.getLeaf('tab'), [
             file,
             openState,
           ]);
