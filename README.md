@@ -1,9 +1,4 @@
-# 🚨 Check out https://github.com/lukemt/obsidian-opener instead! This is no longer maintained. 🚨
-
-
-# old stuff
-
-obsidian-opener:
+# Obsidian Opener: New Tab by Default
 * opens md in new tabs (unless tab already exists, then switches to that tab).
 * opens pdfs ([or other filetypes obsidian can open](https://help.obsidian.md/Advanced+topics/Accepted+file+formats)) with default app instead.
 
@@ -33,13 +28,6 @@ if it's already open, don't open it in new tab.
 but if it's in canvas & selected it THINKS its open.
   fixed it partially; if note already open in another tab it'll now switch to it proper but open a new tab. 
   also if there's an empty tab available it won't pick it.
-# ToDo:
-- [ ] automated testing
-- [ ] test mobile
-- [ ] add basic gif to readme showing what plugin does
-  - if works, update manifest.json 'isDesktopOnly'
-- [ ] add to community plugins (iff automated testing & all issues done)
-- [ ] beautify the settings page
 
 
 # Notes
