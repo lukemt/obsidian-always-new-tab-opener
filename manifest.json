@@ -1,10 +1,10 @@
 {
 	"id": "obsidian-opener",
-	"name": "Opener",
+	"name": "Opener: New Tab by Default",
 	"minAppVersion": "0.15.9",
-	"description": "Open links in new/existing tabs by default. Open PDFs in System App by default. Can open other file formats in System Apps if desired.",
-	"author": "Aidan Gibson",
-	"authorUrl": "https://github.com/aidan-gibson",
+	"description": "Open links in new/existing tabs by default. Can open PDFs and other file formats in System Apps if desired.",
+	"author": "LukeMT, Aidan Gibson",
+	"authorUrl": "https://github.com/lukemt",
 	"isDesktopOnly": false,
 	"version": "2.2.3"
 }
