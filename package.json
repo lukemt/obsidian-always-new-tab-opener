@@ -1,5 +1,5 @@
 {
-	"name": "obsidian-opener",
+	"name": "opener",
 	"version": "2.2.3",
 	"description": "Open links in new/existing tabs by default. Can open PDFs and other file formats in System Apps if desired.",
 	"main": "main.js",

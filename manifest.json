@@ -1,5 +1,5 @@
 {
-	"id": "obsidian-opener",
+	"id": "opener",
 	"name": "Opener: New Tab by Default",
 	"minAppVersion": "0.15.9",
 	"description": "Open links in new/existing tabs by default. Can open PDFs and other file formats in System Apps if desired.",
