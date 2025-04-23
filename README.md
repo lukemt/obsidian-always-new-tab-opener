@@ -1,14 +1,14 @@
 # Obsidian Opener: New Tab by Default
 
-**Obsidian Opener** ensures every document opens in its own tab. Much like an IDE. It has been Battle-Tested and even works well in combination with other plugins.
+**Obsidian Opener** ensures every document opens in its own tab. Much like an IDE.
 
 ## Features
 
 - Always opens markdown notes in new tabs; switches to an existing tab if already open.
 - When cmd/ctrl is pressed, it will open the Link in a new tab, even if the file is already open in another tab.
 - If desired: Open PDFs or other supported formats with your default system app.
-- Fully compatible with other plugins — patches Obsidian’s built‑in `openFile()` function under the hood.
-- Battle-tested
+- Battle-tested with other plugins — patches Obsidian’s built‑in `openFile()` function under the hood.
+- If you do find an issue, please open an issue on GitHub [here](https://github.com/lukemt/obsidian-opener/issues).
 
 ## Installation
 
