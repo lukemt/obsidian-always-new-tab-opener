@@ -1,6 +1,6 @@
 {
 	"name": "opener",
-	"version": "2.2.3",
+	"version": "2.2.4",
 	"description": "Open links in new/existing tabs by default. Can open PDFs and other file formats in System Apps if desired.",
 	"main": "main.js",
 	"scripts": {
@@ -8,7 +8,15 @@
 		"build": "tsc -noEmit -skipLibCheck && node esbuild.config.mjs production",
 		"version": "node version-bump.mjs && git add manifest.json versions.json"
 	},
-	"keywords": ["obsidian-plugin","obsidian","opener", "tab", "tabs", "new tab", "pdf"],
+	"keywords": [
+		"obsidian-plugin",
+		"obsidian",
+		"opener",
+		"tab",
+		"tabs",
+		"new tab",
+		"pdf"
+	],
 	"author": "LukeMT, Aidan Gibson",
 	"license": "MIT",
 	"repository": {
