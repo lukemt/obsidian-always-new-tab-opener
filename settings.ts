@@ -1,10 +1,17 @@
-import { PluginSettingTab, Notice, Platform, Setting } from "obsidian";
+import { App, PluginSettingTab, Notice, Platform, Setting } from "obsidian";
 import Opener from "./main";
 
 export class OpenerSettingTab extends PluginSettingTab {
+  plugin: Opener;
+
+  constructor(app: App, plugin: Opener) {
+    super(app, plugin);
+    this.plugin = plugin;
+  }
+
   display(): void {
     const { containerEl } = this;
-    const plugin: Opener = (this as any).plugin;
+    const plugin = this.plugin;
     containerEl.empty();
     new Setting(containerEl)
       .setName("New Tab Default")
@@ -73,7 +80,7 @@ export class OpenerSettingTab extends PluginSettingTab {
               plugin.saveSettings();
             });
         })
-        .settingEl.style.borderTop = "none";
+        .settingEl.style.borderTop = "none"; // Removes the separator line
     }
   }
 }

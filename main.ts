@@ -243,7 +243,7 @@ export default class Opener extends Plugin {
           }
 
           // linked tabs
-          if ((this as any).group) {
+          if ((this as WorkspaceLeaf & { group?: unknown }).group) {
             // - tab is linked to another tab (group), see issue #9
             new Notice('Opener: This is a Linked Tab! Opening in same tab therefore.');
             return defaultBehavior();
