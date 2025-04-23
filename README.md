@@ -1,24 +1,26 @@
 # Obsidian Opener: New Tab by Default
 
-**Obsidian Opener** ensures every markdown note opens in its own tab and routes PDFs (or other supported file types) to your OS’s default application.
+**Obsidian Opener** ensures every document opens in its own tab. Much like an IDE. It has been Battle-Tested and even works well in combination with other plugins.
 
 ## Features
 
-- Opens markdown notes in new tabs; switches to an existing tab if already open.
-- Opens PDFs or other supported formats with your default system app.
-- Fully compatible with all plugins—patches Obsidian’s built‑in `openFile()` function under the hood.
+- Always opens markdown notes in new tabs; switches to an existing tab if already open.
+- When cmd/ctrl is pressed, it will open the Link in a new tab, even if the file is already open in another tab.
+- If desired: Open PDFs or other supported formats with your default system app.
+- Fully compatible with other plugins — patches Obsidian’s built‑in `openFile()` function under the hood.
+- Battle-tested
 
 ## Installation
 
 ### Recommended
 1. Install [BRAT](https://github.com/TfTHacker/obsidian42-brat).
-2. Use BRAT to install from this link: [aidan-gibson/obsidian-opener](https://github.com/aidan-gibson/obsidian-opener).
+2. Use BRAT to install from this link: [lukemt/obsidian-opener](https://github.com/lukemt/obsidian-opener).
 3. Enable the plugin under **Settings → Community Plugins**.
 
 ### From Source
 ```sh
 cd {your vault}/.obsidian/plugins
-git clone https://github.com/aidan-gibson/obsidian-opener
+git clone https://github.com/lukemt/obsidian-opener
 npm install
 npm run build
 ```
