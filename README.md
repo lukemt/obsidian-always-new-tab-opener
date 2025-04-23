@@ -1,4 +1,4 @@
-# Obsidian Opener: New Tab by Default
+# Obsidian Opener 2: New Tab by Default
 
 **Obsidian Opener** ensures every document opens in its own tab. Much like an IDE.
 
