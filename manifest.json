@@ -1,6 +1,6 @@
 {
-	"id": "opener",
-	"name": "Opener: New Tab by Default",
+	"id": "opener-2",
+	"name": "Opener 2: New Tab by Default",
 	"minAppVersion": "0.15.9",
 	"description": "Open links in new/existing tabs by default. Can open PDFs and other file formats in System Apps if desired.",
 	"author": "LukeMT, Aidan Gibson",

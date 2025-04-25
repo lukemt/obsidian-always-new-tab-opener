@@ -1,5 +1,5 @@
 {
-	"name": "opener",
+	"name": "opener-2",
 	"version": "2.2.6",
 	"description": "Open links in new/existing tabs by default. Can open PDFs and other file formats in System Apps if desired.",
 	"main": "main.js",
