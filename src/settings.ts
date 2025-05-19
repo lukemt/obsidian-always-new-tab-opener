@@ -14,7 +14,7 @@ export class OpenerSettingTab extends PluginSettingTab {
     const plugin = this.plugin;
     containerEl.empty();
     new Setting(containerEl)
-      .setName("New Tab Default")
+      .setName("New tab by default")
       .setDesc(
         "Enable to open new files in a new tab (or existing tab, if it was previously opened). Disable for default Obsidian behavior."
       )
@@ -25,7 +25,7 @@ export class OpenerSettingTab extends PluginSettingTab {
         })
       );
     new Setting(containerEl)
-      .setName("PDF Default App")
+      .setName("PDF default app")
       .setDesc(
         "Enable to open pdfs with system viewer app. Disable for default behavior (open pdfs in Obsidian)."
       )
@@ -36,9 +36,9 @@ export class OpenerSettingTab extends PluginSettingTab {
         })
       );
     new Setting(containerEl)
-      .setName("Default app only when Ctrl/Cmd-Key is held")
+      .setName("Default app only when Ctrl/Cmd key is held")
       .setDesc(
-        "Open in default app only when Ctrl/Cmd-Key is held. Disable to always‚ open with system viewer."
+        "Open in default app only when Ctrl/Cmd-Key is held. Disable to always open with system viewer."
       )
       .addToggle((toggle) =>
         toggle.setValue(plugin.settings.extOnlyWhenMetaKey).onChange((value) => {
@@ -58,7 +58,7 @@ export class OpenerSettingTab extends PluginSettingTab {
         })
       );
     new Setting(containerEl)
-      .setName("Open Outside Obsidian: Manual List")
+      .setName("Open outside Obsidian: manual list")
       .setDesc("This shouldn't be necessary, but you can manually enable custom extensions here.")
       .addToggle((toggle) =>
         toggle.setValue(plugin.settings.custExt).onChange((value) => {
@@ -69,7 +69,7 @@ export class OpenerSettingTab extends PluginSettingTab {
       );
     if (plugin.settings.custExt) {
       new Setting(containerEl)
-        .setName("Manual List")
+        .setName("Manual list")
         .setDesc("Enter extension names (without the dot, ie, just docx separated by newlines).")
         .addTextArea((textArea) => {
           textArea.inputEl.rows = 5;
