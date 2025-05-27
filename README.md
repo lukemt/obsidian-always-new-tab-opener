@@ -1,6 +1,6 @@
-# Opener 2: New Tab by Default
+# Opener: New Tab by Default
 
-**Opener 2** ensures every document opens in its own tab. Much like an IDE.
+**Opener** ensures every document opens in its own tab. Much like an IDE.
 
 ## Features
 
